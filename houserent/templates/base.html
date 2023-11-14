@@ -137,12 +137,12 @@
 </div>
 <!-- JS Vendor, Plugins & Activation Script Files -->
 {% block content %}{% endblock %}
-<footer class="footer bg-[#EEEEEE] font-normal bg-no-repeat" style="background-image: url('assets/images/footer/pattern.png'); padding: 2%;">
+<footer class="footer bg-[#EEEEEE] font-normal bg-no-repeat" style="background-image: url('{% static 'assets/images/footer/pattern.png'); padding: 2%;">
     <div class="container">
         <div class="grid grid-cols-12 gap-x-[30px] mb-[-30px]">
             <div class="col-span-12 sm:col-span-6 lg:col-span-4 mb-[30px]">
                 <a href="index.html" class="block mb-[25px]">
-                    <img src="assets/images/logo/logo.png" width="99" height="46" loading=lazy alt="footer logo">
+                    <img src="{% static 'assets/images/logo/logo.png' %}" width="99" height="46" loading=lazy alt="footer logo">
                 </a>
                 <p class="mb-[5px] xl:mb-[40px] max-w-[270px]">Properties are most budget friendly
                     so you have are find opportunity is
@@ -217,19 +217,19 @@
 
 </a>
 <!-- Vendors JS -->
-<script src="assets/js/vendor/modernizr-3.11.7.min.js"></script>
-<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="{% static 'assets/js/vendor/modernizr-3.11.7.min.js' %}"></script>
+<script src="{% static 'assets/js/vendor/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'assets/js/vendor/jquery-migrate-3.3.2.min.js' %}"></script>
 <!-- Plugins JS -->
-<script src="assets/js/plugins/swiper-bundle.min.js"></script>
-<script src="assets/js/plugins/popper.min.js"></script>
-<script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script>
-<script src="assets/js/plugins/parallax.min.js"></script>
-<script src="assets/js/plugins/jquery.nice-select.min.js"></script>
+<script src="{% static 'assets/js/plugins/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/plugins/popper.min.js' %}"></script>
+<script src="{% static 'assets/js/plugins/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets//js/plugins/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'assets//js/plugins/parallax.min.js' %}"></script>
+<script src="{% static 'assets//js/plugins/jquery.nice-select.min.js' %}"></script>
 
 <!-- Activation JS -->
-<script src="assets/js/main.js"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
 
